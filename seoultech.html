@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>서울과학기술대학교 포털 시스템</title>
+
+  <style>
+    body { width: 1440px; background-color: #EAEAEA; float: left;}
+
+    header {
+      height: 30px;
+      background-color: #2457BD; color: white;
+      font-size: 13px;
+    }
+
+    header font {
+      float: right; padding-top: 7px;
+    }
+
+    nav {
+      height: 50px; width: 1440px; margin-left: 0 auto;
+      background-color: white; float: left;
+      padding-top: 5px; padding-bottom: 5px;
+    }
+
+    li { list-style: none; }
+
+    nav img {
+      width: 210px; height: 45px;
+      float: left; padding-left: 10%; padding-right: 7%;
+    }
+
+    .menu {
+      float: left; position: relative; display: inline-block;
+      width: 720px; height: 50px;
+    }
+
+    .menu1 > li {
+      display: block;
+      float: left; margin-left: 0 auto; height: 40px;
+      padding: 0 5px; cursor: pointer;
+    }
+
+    .menu2 {
+      position: absolute; display: none;
+    }
+
+    .menu2 > li {
+      width: 100px;
+    }
+
+    .menu1:hover .menu2 {
+      display: block;
+    }
+
+    section {
+      padding-top: 30px;
+      background-color: #D5D5D5; border-top: 2px solid #BDBDBD;
+      float: left; font-size: 14px;
+    }
+
+    #left {
+      width: 240px; padding-left: 120px;
+      float: left;
+    }
+
+    .info {
+      width: 240px; margin-bottom: 20px;
+    }
+
+    .info_top {
+      background-color: #C7D3ED;
+      border-top: 2px solid; border-color: #D5D5D5; border-radius: 3px;
+    }
+
+    .info_center {
+      text-align: center; background-color: #D7D7D7;
+      border: 2px solid; border-color: #D5D5D5;
+    }
+
+    .info_center li {
+      float: left;
+    }
+
+    .info_bottom {
+      border: 2px solid; border-color: #D5D5D5;
+      background-color: white;
+    }
+
+    .information li { float: left; width: 50px; height: 50px;}
+
+    .library {
+      width: 240px;
+      margin-bottom: 20px; background-color: #D7D7D7;
+    }
+
+    .class {
+      width: 240px;
+      background-color: #D7D7D7;
+      border-top: 2px solid; border-color: #2457BD;
+    }
+
+    #center {
+      width: 680px; float: left;
+      padding-left: 20px; padding-right: 20px;
+    }
+
+    .board1 {
+      width: 680px;
+    }
+
+    .board2 {
+      width: 680px;
+    }
+
+    .link {
+      width: 680px; border: 1px solid; border-color: #BDBDBD;
+    }
+
+    tr td {
+      border: 1px solid; border-color: #BDBDBD;
+    }
+
+    .menubar {
+      float: left;
+    }
+
+    .title {
+      background-color: #D7D7D7;
+    }
+
+    .contents {
+      background-color: white;
+    }
+
+    #right {
+      width: 240px; padding-right: 120px;
+      float: left;
+    }
+
+    footer {
+      height: 70px; width: 100%;
+      background-color: #2457BD;
+      bottom: 0; color: white; font-size: 13px;
+      clear: both; /*footer가 올라가지 않음*/
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <font>류수빈(학부생/재학생)[컴퓨터공학과]님 로그인하셨습니다. | 포털 홈 | 포털 이용안내 | 로그아웃 | 화면크기조정 </font>
+  </header>
+
+  <nav>
+    <img src="seoultech.gif">
+    <div class="menu">
+      <li>통합정보(SUIS)</li>
+      <li>E-Class</li>
+      <li>EPiC folio</li>
+      <li>웹메일</li>
+      <li>일정</li>
+      <li class="menu1">게시판</li>
+        <ul class="menu2">
+          <li>주요정책의견조회</li>
+          <li>포털공지사항</li>
+          <li>포털이용안내</li>
+          <li>주간식단표</li>
+          <li>통합정보FAQ게시판</li>
+          <li>학생SW이용안내</li>
+        </ul>
+        <li>주소록</li>
+        <li class="menu1">설문조사</li>
+        <ul class="menu2">
+          <li>진행중 설문</li>
+          <li>종료된 설문</li>
+        </ul>
+        <li>동호회</li>
+        <li>연계시스템</li>
+      </div>
+  </nav>
+
+  <section>
+
+    <div id=left>
+      <div class="info">
+        <div class="info_top">
+          <font>류수빈 님 학부생/재학생</font><br>
+          <font>컴퓨터공학과</font>
+        </div>
+
+        <div class="info_center">
+          <button>마이페이지</button>
+          <button>로그아웃</button>
+
+          <ul>
+            <li>웹메일</li>
+            <li>쪽지</li>
+            <li>E-Class</li>
+            <li>민원답변</li>
+          </ul>
+        </div>
+        <br>
+        <div class="info_bottom">
+          <font>도서대출</font><br>
+          <hr>
+          <font id="condition">대출 0 | 예약 0 | 연체 0</font>
+        </div>
+
+      </div>
+
+      <div class="library">
+        <table>
+          <th>열람실 정보</th>
+          <tr>
+            <td>
+              <li>1층 일반열람실1</li>
+              <li>64/ 288석</li>
+            </td>
+            <td>
+              <li>🀫🀫🀆🀆🀆🀆🀆🀆🀆🀆</li>
+              <li>22.22%</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <li>1층 노트북열람실1</li>
+              <li>20/ 60석</li>
+            </td>
+            <td>
+              <li>🀫🀫🀫🀆🀆🀆🀆🀆🀆🀆</li>
+              <li>33.33%</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <li>2층 일반열람실2</li>
+              <li>77/ 288석</li>
+            </td>
+            <td>
+              <li>🀫🀫🀆🀆🀆🀆🀆🀆🀆🀆</li>
+              <li>26.74%</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <li>2층 노트북열람실2</li>
+              <li>12/ 52석</li>
+            </td>
+            <td>
+              <li>🀫🀫🀆🀆🀆🀆🀆🀆🀆🀆</li>
+              <li>23.08%</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <li>2층 일반열람실3</li>
+              <li>18/ 468석</li>
+            </td>
+            <td>
+              <li>🀫🀆🀆🀆🀆🀆🀆🀆🀆🀆</li>
+              <li>3.85%</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <li>2층 별관스터디실</li>
+              <li>9/ 14석</li>
+            </td>
+            <td>
+              <li>🀫🀫🀫🀫🀫🀫🀆🀆🀆🀆</li>
+              <li>64.29%</li>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="class">
+        <table>
+          <th>
+            나의 수강강좌
+          </th>
+          <tr>
+            <td>시간</td>
+            <td>월</td>
+            <td>화</td>
+            <td>수</td>
+            <td>목</td>
+            <td>금</td>
+            <td>토</td>
+          </tr>
+          <tr>
+            <td>1교시</td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2교시</td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3교시</td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4교시</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5교시</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6교시</td>
+            <td>●</td>
+            <td>●</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>7교시</td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>8교시</td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9교시</td>
+            <td></td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>미래융합대학 시간표는 통합정보시스템에서 별도 확인</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id=center>
+      <div class="board1">
+        <div class="menubar">
+          <ul>
+            <li>공지소식</li>
+            <li>학사</li>
+            <li>장학</li>
+            <li>채용</li>
+            <li>취업</li>
+            <li>SW이용안내</li>
+            <li>MORE ‣</li>
+          </ul>
+        </div>
+        <br>
+        <div class="contents">
+          <li>[정책홍보-경찰청] 산업기술보호 활동 홍보</li>
+          <li>[인재개발원] SeoulTech인재원(고시반) 4기 고시생 모집 안내</li>
+          <li>[정책홍보-행정안전부] 2018 국가안전대진단</li>
+          <li>[정책홍보-산림청] 계속되는 건조한 날씨, 산불예방에 동참해주세요</li>
+          <li>[정책홍보-보건복지부] 최저임금 인상으로 사회서비스 종사자 101만명 삶이 ...</li>
+        </div>
+      </div>
+
+      <div class="board2">
+        <div class="menubar">
+          <ul>
+            <li>자유발언대</li>
+            <li>분실물</li>
+            <li>벼룩시장</li>
+            <li>공모</li>
+            <li>기금</li>
+            <li>신문사</li>
+            <li>MORE ‣</li>
+          </ul>
+        </div>
+        <br>
+        <div class="contents">
+          <li>교내 헬스장 2개월 5인팟, 한분만 더</li>
+          <li>태권도부 43기 상시 모집중!!</li>
+          <li>강제징용 영상제작 프로젝트 과기대 서포터즈를 모집합니다!</li>
+          <li>서울과학기술대학교 버킷리스트 동아리 [빠케스] 에서 신입부원 모집합니다~!</li>
+          <li>서울과기대 개강미사 및 가톨릭학생회 신입회원 모집 안내</li>
+      </div>
+
+      <div class="news">
+        <div class="title">
+          <font>과기대뉴스</font>
+          <font>MORE ‣</font>
+        </div>
+        <div class="contents">
+          <ul>
+            <li>2017학년도 전기 학위수여식 - 미래 사회의 창조적 주역, 서울과기대인</li>
+            <li>[기계시스템디자인공학과] 바이애슬론용 눈가리개, 평창 패럴림픽 금빛 사냥 나서</li>
+            <li>[안경광학과] 학/석사 박상일 씨, 가톨릭관동대 전임교수 임용</li>
+            <li>[미래융합대학] 서울미래융합교육협의회와 업무협약 체결</li>
+            <li>[안경광학과] 박미정 교수, ⌈미래교육박람회⌋ 성공 개최로 교육부장관 표창</li>
+        </div>
+      </div>
+
+      <div class="link">
+        <table>
+          <tr>
+            <td>대표홈페이지</td>
+            <td>도서관</td>
+            <td>기금소식</td>
+            <td>신문사</td>
+          </tr>
+          <tr>
+            <td>인터넷증명발급</td>
+            <td>증명발급<br>해외우편서비스</td>
+            <td>바이러스 백신</td>
+            <td>e-Class</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id=right>
+      <div class="bookmark">
+        <div class="title">
+          <li>나의 즐겨찾기</li>
+          <li>설정</li>
+        </div>
+        <div class="contents">
+          <ul>
+            <li>Office365 가입센터</li>
+            <li>주간식단표</li>
+            <li>도서관</li>
+            <li>E-Class</li>
+            <li>통합정보시스템</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="title">
+          <li>학사일정</li>
+          <li>MORE ‣</li>
+        </div>
+        <div class="contents">
+          <ul>
+            <li>학부학사일정 | 대학원학사일정</li>
+            <li>03.02 ~ 03.02</li>
+            <li>1학기 개강</li>
+            <hr>
+            <li>03.02 ~ 03.08</li>
+            <li>1학기 수강신청 확인 및 정정기간</li>
+            <hr>
+            <li>03.28 ~ 03.28</li>
+            <li>1학기 수업일수 1/4선</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="title">
+          <font>팝업존</font>
+          <font>| ▶︎ | 🁢🁢</font>
+        </div>
+        <div class="contents">
+        </div>
+      </div>
+
+      <div class="survey">
+        <div class="title">
+          <li>설문조사</li>
+          <li>MORE ‣</li>
+        </div>
+        <div class="contents">
+          <li>진행중인 설문조사가 없습니다.</li>
+        </div>
+      </div>
+    </div>
+
+    <div id=bottom>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <li>개인정보 처리방침></li>
+    <li>이메일무단수집거부></li><br>
+    <li>01811 서울시 노원구 공릉로 232 서울과학기술대학교 | Tel : 02-970-6114 | Contact us : webmaster</li><br>
+    <li>Copyright (c) 2012 SEOUL NATIONAL UNIVERSITY OF SCIENCE AND TECHNOLOGY. All Rights Reserved.</li>
+  </footer>
+
+</body>
